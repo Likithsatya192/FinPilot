@@ -8,8 +8,15 @@ class RealTimeStockPrice:
     def get_stock_price(self, symbol: str) -> Dict[str, Any]:
         """Fetch the real-time stock price for a given symbol."""
         try:
+            url = f"{self.base_url}/{symbol}"
             response = requests.get(url, timeout=10)
-            data = response.json()
-            return data if response.status_code == 200 else {}
+            if response.status_code == 200:
+                try:
+                    data = response.json()
+                    return data
+                except Exception as e:
+                    return {"error": f"JSON decode error: {str(e)}. Response text: {response.text}", "status": "error"}
+            else:
+                return {"error": f"HTTP {response.status_code}: {response.text}", "status": "error"}
         except Exception as e:
             return {"error": str(e), "status": "error"}

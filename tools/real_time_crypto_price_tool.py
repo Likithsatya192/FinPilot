@@ -3,10 +3,12 @@ from dotenv import load_dotenv
 from utils.real_time_crypto_price import RealTimeCryptoPrice
 from langchain.tools import tool
 from typing import List, Dict, Any
+import json
+from datetime import datetime
 
 class RealTimeCryptoPriceTool:
     def __init__(self):
-        load-dotenv()
+        load_dotenv()
         self.crypto_price_service = RealTimeCryptoPrice()
         self.crypto_price_tools_list = self._setup_tools()
 

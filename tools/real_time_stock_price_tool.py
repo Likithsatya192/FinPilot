@@ -1,7 +1,8 @@
 import os
-from utils.real_time_stock_price import get_stock_price
+from utils.real_time_stock_price import RealTimeStockPrice
 from langchain.tools import tool
-from typing import List
+from typing import List, Dict, Any
+import json
 from dotenv import load_dotenv
 from datetime import datetime
 class RealTimeStockPriceTool:
@@ -30,8 +31,7 @@ class RealTimeStockPriceTool:
             """
             try:
                 """Get Current Stock Price for a given symbol."""
-                data = stock_price_service.get_stock_price(symbol)
-                
+                data = self.stock_price_service.get_stock_price(symbol)
                 if 'chart' in data and data['chart']['result']:
                     result = data['chart']['result'][0]
                     meta = result['meta']
@@ -53,3 +53,4 @@ class RealTimeStockPriceTool:
                 return {"error": str(e), "status": "error"}
 
         return [get_stock_price]
+        

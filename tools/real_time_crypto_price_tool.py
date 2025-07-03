@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 from utils.real_time_crypto_price import RealTimeCryptoPrice
 from langchain.tools import tool
 from typing import List, Dict, Any
-import json
 from datetime import datetime
 
 class RealTimeCryptoPriceTool:

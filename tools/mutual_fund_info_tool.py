@@ -2,9 +2,7 @@ import os
 from utils.mutual_fund_info import MutualFundInfo
 from langchain.tools import tool
 from typing import List, Dict, Any
-import json
 from dotenv import load_dotenv
-from datetime import datetime
 
 class MutualFundInfoTool:
     def __init__(self):

@@ -2,7 +2,6 @@ import os
 from utils.real_time_stock_price import RealTimeStockPrice
 from langchain.tools import tool
 from typing import List, Dict, Any
-import json
 from dotenv import load_dotenv
 from datetime import datetime
 class RealTimeStockPriceTool:

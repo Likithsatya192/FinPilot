@@ -1,3 +1,6 @@
+from typing import Dict, Any
+
+
 class LoanEMICalculator:
     @staticmethod
     def calculate_loan_emi(principal: float, rate: float, tenure_months: int) -> Dict[str, Any]:

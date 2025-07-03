@@ -1,3 +1,5 @@
+from typing import Dict, Any
+
 class SIPCalculator:
     @staticmethod
     def calculate_sip(monthly_investment: float, annual_return: float, tenure_years: int) -> Dict[str, Any]:

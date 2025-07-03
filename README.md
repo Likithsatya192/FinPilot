@@ -79,7 +79,7 @@ The Streamlit app will open in your browser.
 ## Usage Workflow
 1. **Start the backend**: `python main.py`
 2. **Start the frontend**: `streamlit run app.py`
-3. **Interact with the app**: Enter your financial queries (e.g., "What is the current stock price of AAPL?") in the chat interface.
+3. **Interact with the app**: Enter your financial queries (e.g., "What is the current stock price of Bitcoin?") in the chat interface.
 4. **View results**: The AI assistant will respond with real-time data and analysis.
 
 ## Requirements
@@ -87,4 +87,4 @@ The Streamlit app will open in your browser.
 - See `requirements.txt` for all Python dependencies
 
 ---
-*This project was created by Likith's FinBot Financial Assistant.*
+*This project was created by Likith's FinPilot*

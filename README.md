@@ -1,6 +1,6 @@
-# 🌍 FinBot Financial Assistant
+# 🌍 FinPilot Financial Assistant
 
-A Streamlit-based AI-powered financial assistant that provides real-time stock prices, mutual fund information, currency conversion, and more. The backend is powered by FastAPI and custom tools for financial data retrieval.
+An AI-powered financial assistant that provides real-time stock prices, crypto prices, mutual fund information, currency conversion, and more. The backend is powered by FastAPI and custom tools for financial data retrieval.
 
 ## Features
 - Real-time stock price lookup
